@@ -15,7 +15,7 @@ def main():
     def start():
         start_game = input("Would you like to see play the game. Y/N: ", ).lower()
         if start_game == "y":
-            resolution = (1200, 900)
+            resolution = (500, 400)
             dungeon_lily = pygame.image.load("Lily's Dungeon Floor.png")
             white = (255, 255, 255)
             black = (0, 0, 0)
@@ -31,9 +31,10 @@ def main():
                         pygame.quit()
                         exit(1)
         else:
-            print("\nThis program is designed to render a three dimensional environment.\n")
+            print(
+                '\nThis program is designed to render a three dimensional environment and you don\'t want to see my hard work?')
             return_to_start = input(
-                "If you don't want to see my hard work then what am I good for; do you want to see it? Y/N: \n")
+                "\nTHEN WHAT AM I GOOD FOR?!!!!!\nDo you want to see it, please? Y/N: \n")
             if return_to_start[0] == "y":
                 start()
             else:
